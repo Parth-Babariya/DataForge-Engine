@@ -18,7 +18,7 @@ Design principles:
     requests — parsing and validation happen elsewhere.
 """
 import asyncio
-from typing import Any
+from typing import Any, Optional
 
 from openai import AsyncOpenAI
 
@@ -33,7 +33,7 @@ class OpenAIClient(LLMClient):
     (returning plain strings) are preserved.
     """
 
-    def __init__(self, api_key: str | None = None, model: str = "gpt-4o-mini"):
+    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4o-mini"):
         """Initialise the OpenAI async client.
 
         Args:

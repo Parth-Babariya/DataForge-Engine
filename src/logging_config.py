@@ -14,7 +14,7 @@ import logging
 import json
 import sys
 from datetime import datetime
-from typing import Any
+from typing import Any, Optional
 from pathlib import Path
 
 
@@ -52,9 +52,9 @@ class JSONFormatter(logging.Formatter):
 
 
 def setup_logging(
-    name: str | None = None,
+    name: Optional[str] = None,
     level: str = "INFO",
-    log_file: str | None = None,
+    log_file: Optional[str] = None,
 ) -> logging.Logger:
     """Initialize structured logging with JSON output.
 
