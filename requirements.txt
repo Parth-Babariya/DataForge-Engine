@@ -1,0 +1,40 @@
+# Core API Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# UI Framework
+streamlit==1.29.0
+
+# LLM Integration
+openai==1.6.0
+
+# Data Processing
+pandas==2.1.0
+datasets==2.16.0
+
+# Request Handling & HTTP
+httpx==0.25.0
+
+# Data Validation
+pydantic==2.5.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1
+
+# Code Quality
+pylint==3.0.2
+flake8==6.1.0
+black==23.11.0
+isort==5.12.0
+
+# Security
+bandit==1.7.5
+safety==2.3.5
+
+# Logging & Monitoring
+python-json-logger==2.0.7
+
+# Development
+python-dotenv==1.0.0
